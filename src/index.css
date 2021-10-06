@@ -1,13 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Russo+One");
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Russo One;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: #a8a8a8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Wrapper {
+  width: 660px;
+  height: 316px;
+  border: 5px solid orange;
+  background-color: #c5c2c2;
+  display: flex;
+}
+.Wrapper .pad-bank {
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 20px;
+  width: 332px;
+  height: 272px;
+}
+.Wrapper .controls-container {
+  text-align: center;
+  width: 240px;
+  height: 272px;
+  margin: 40px 20px 0px 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+.Wrapper .DrumPad {
+  text-align: center;
+  background-color: grey;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 100px;
+  height: 80px;
+  padding-top: 35px;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px black;
+  float: left;
+}
+.Wrapper .Controls {
+  width: 100%;
+  height: 100%;
+}
+.Wrapper .Controls input {
+  width: 100%;
+  color: black;
+}
+.Wrapper .Controls .control {
+  margin: auto;
+  width: 100px;
+  transition: all 0.5s;
+}
+#display {
+  width: 200px;
+  background-color: gray;
+  margin: 15px auto;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.outer-select, .Wrapper .Controls .control .select {
+  margin: auto;
+  border: 1px solid black;
+  width: 50px;
+  height: 23px;
+  padding: 1px;
+  background-color: black;
+}
+
+.inner-select, .Wrapper .Controls .control .select .inner {
+  width: 23px;
+  height: 19px;
+  background: blue;
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */
